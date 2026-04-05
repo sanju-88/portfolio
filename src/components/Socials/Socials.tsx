@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 import Heading from "../shared/Heading"
 import { Link } from "react-router-dom"
 
