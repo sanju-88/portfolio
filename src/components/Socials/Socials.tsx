@@ -7,31 +7,25 @@ const SocialsData=[
     {
         id:0,
         name:"Linkedin",
-        link:"https://www.linkedin.com/in/ashishchanchal/",
+        link:"https://www.linkedin.com/in/sanju7973/",
         icon : <FaLinkedin className="w-4 h-4 "/>
     },
     {
         id:1,
         name:"Github",
-        link:"https://github.com/Ashish-chanchal",
+        link:"https://github.com/sanju-88/",
         icon : <FaGithub className="w-4 h-4 "/> 
     },
     {
         id:2,
         name:"Instagram",
-        link:"https://www.instagram.com/ashish._chanchal/",
+        link:"https://www.instagram.com/__sanju__88/",
         icon : <FaInstagram className="w-4 h-4 "/>
     },
     {
         id:3,
-        name:"Twitter",
-        link:"https://x.com/_ashishchanchal",
-        icon : <FaTwitter className="w-4 h-4 "/>
-    },
-    {
-        id:3,
         name:"Email",
-        link:"mailto:akchanchal2002@gmail.com",
+        link:"mailto:sanjusawariya88@gmail.com",
         icon : <FaEnvelope className="w-4 h-4 "/>
     },
     

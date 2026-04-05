@@ -30,8 +30,8 @@ const Contact = () => {
             Message me Here
           </h2>
           <ul className="space-y-2">
-            <li ><Link to="https://www.linkedin.com/in/ashishchanchal/" className="flex gap-2"><FaLinkedin/> AshishChanchal</Link></li>
-            <li ><Link to="https://github.com/Ashish-chanchal" className="flex gap-2"><FaGithub/> Github</Link></li>
+            <li ><Link to="https://www.linkedin.com/in/sanju7973/" className="flex gap-2"><FaLinkedin/> Sanju Sawariya</Link></li>
+            <li ><Link to="https://github.com/sanju-88/" className="flex gap-2"><FaGithub/> Github</Link></li>
           </ul>
           </div>
         </div>

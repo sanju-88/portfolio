@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 import Hero from "../../components/Hero/Hero";
 import Projects from "../../components/Projects/Projects";
 import Skills from "../../components/Skills/Skills";
@@ -56,27 +56,25 @@ const ExperienceData = [
     description: [
       "Backend Development: Upskilled in NestJS, MongoDB, and authentication, implementing features like MultiModel Function Calling with OpenAI Assistant API, real-time conversation, and reducing the response time of voice conversation from 10 - 15 seconds to 3 - 4 Sec",
       "Frontend Development: Improved ReactJS focusing on state management using Redux Toolkit, optimization, and integration of Material UI for Hotel Services System - AI, React Native for services visualization app for hotel staff with role-based UI rendering, reminder notifications using Notifee and Firebase Cloud Messaging  and Three.js and WebGL for 3D Character rendering on browser it includes humanoid and animated characters, Voice based system with Agentic ai Integration",
-      "Problem Solving & Collaboration: Enhanced problem-solving in JS/NestJS, contributed to team projects, and collaborated on building responsive, scalable applications. Solved a Major problem for them in IOS Safari in Voice to Voice Conversation and was able to build/deliver 10+ demos for clients' visits,  also provided major contribution in the company's product."
+      "Problem Solving & Collaboration: Enhanced problem-solving in JS/NestJS, contributed to team projects, and collaborated on building responsive, scalable applications. Solved a Major problem for them in IOS Safari in Voice to Voice Conversation and was able to build/deliver 10+ demos for clients' visits,  also provided major contribution in the company's product.",
     ],
-    
   },
-   {
-    id:2,
+  {
+    id: 2,
 
     tech: "Company Name: AlphaDroid",
     title: "Designation: Software Engineer",
-      description: [
+    description: [
       "Backend Development: Upskilled in NestJS, MongoDB, and authentication, implementing features like MultiModel Function Calling with OpenAI Assistant API, real-time conversation, and reducing the response time of voice conversation from 10 - 15 seconds to 3 - 4 Sec",
       "Frontend Development: Improved ReactJS focusing on state management using Redux Toolkit, optimization, and integration of Material UI for Hotel Services System - AI, React Native for services visualization app for hotel staff with role-based UI rendering, reminder notifications using Notifee and Firebase Cloud Messaging  and Three.js and WebGL for 3D Character rendering on browser it includes humanoid and animated characters, Voice based system with Agentic ai Integration",
-      "Problem Solving & Collaboration: Enhanced problem-solving in JS/NestJS, contributed to team projects, and collaborated on building responsive, scalable applications. Solved a Major problem for them in IOS Safari in Voice to Voice Conversation and was able to build/deliver 10+ demos for clients' visits,  also provided major contribution in the company's product."
+      "Problem Solving & Collaboration: Enhanced problem-solving in JS/NestJS, contributed to team projects, and collaborated on building responsive, scalable applications. Solved a Major problem for them in IOS Safari in Voice to Voice Conversation and was able to build/deliver 10+ demos for clients' visits,  also provided major contribution in the company's product.",
     ],
-    
   },
 ];
 
 const InternshipData = [
-    {
-    id:3,
+  {
+    id: 3,
 
     tech: "Company Name: Kloudidev",
     title: "Designation: React Engineer Intern",
@@ -107,17 +105,19 @@ const InternshipData = [
       "Directed a cross-functional team to create an innovative web platform for E-Learners Technology, harnessing HTML, CSS, JavaScript, PHP, and MySQL",
     ],
   },
-]
+];
 const aboutData = [
   {
     id: 1,
-    description: "I’m a self-taught Software developer based in Noida, Uttar Pradesh,India. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.",
+    description:
+      "I am a passionate Full Stack Developer and a BCA graduate. I love building modern, responsive, and user-friendly web applications.",
   },
   {
     id: 2,
-    description: "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.",
+    description:
+      "I have hands-on experience with React.js, Node.js, and MongoDB. I am currently looking for opportunities to start my professional journey in the IT industry.",
   },
-]
+];
 // Define variants for animation
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -138,7 +138,7 @@ const ScrollReveal = ({ children }: { children: React.ReactNode }) => {
     }
   }, [controls, inView]);
   useEffect(() => {
-    window.scrollTo(0, 0);  // Scroll to the top
+    window.scrollTo(0, 0); // Scroll to the top
   }, []);
   return (
     <motion.div
@@ -152,39 +152,48 @@ const ScrollReveal = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-function HomePage({ setSelectedItem }: { setSelectedItem?: React.Dispatch<React.SetStateAction<number>> }) {
+function HomePage({
+  setSelectedItem,
+}: {
+  setSelectedItem?: React.Dispatch<React.SetStateAction<number>>;
+}) {
   return (
     <div>
       <Helmet>
-        <title>Ashish Chanchal</title>
-        <meta name="description" content="Ashish Chanchal is a Software Developer and Community Manager based in Noida, Uttar Pradesh, India. He specializes in Frontend Development, Full-stack Development, Machine Learning, and Open Source. Explore Ashish Chanchal's portfolio of innovative projects, including web and mobile apps built with Dart, Flutter, React, Firebase, HTML, CSS, JavaScript, and more. Discover cutting-edge applications like CareLink, E-Learners, Movie Tickiter, and Rent-Up, each showcasing advanced development in user experience, seamless functionality, and modern design principles. Connect with Ashish Chanchal for software development, web design, and community management services. Reach out to Ashish Chanchal for collaborations, projects, and more." />
-        </Helmet>
+        <title>Sanju Sawariya</title>
+        <meta
+          name="description"
+          content="Sanju Sawariya is a Software Developer and Community Manager based in Noida, Uttar Pradesh, India. He specializes in Frontend Development, Full-stack Development, Machine Learning, and Open Source. Explore Sanju Sawariya's portfolio of innovative projects, including web and mobile apps built with Dart, Flutter, React, Firebase, HTML, CSS, JavaScript, and more. Discover cutting-edge applications like CareLink, E-Learners, Movie Tickiter, and Rent-Up, each showcasing advanced development in user experience, seamless functionality, and modern design principles. Connect with Sanju Sawariya for software development, web design, and community management services. Reach out to Sanju Sawariya for collaborations, projects, and more."
+        />
+      </Helmet>
       {/* Apply scroll reveal to each section */}
       <ScrollReveal>
         <Hero />
       </ScrollReveal>
       <ScrollReveal>
-        <Experience ExperienceData={ExperienceData}/>
+        <Experience ExperienceData={ExperienceData} />
       </ScrollReveal>
-            <ScrollReveal>
+      <ScrollReveal>
         <Experience ExperienceData={InternshipData} title="Internships" />
       </ScrollReveal>
       <ScrollReveal>
-        <Projects ProjectsData={ProjectsData} heading="Projects" setSelectedItem={setSelectedItem}/>
+        <Projects
+          ProjectsData={ProjectsData}
+          heading="Projects"
+          setSelectedItem={setSelectedItem}
+        />
       </ScrollReveal>
       <ScrollReveal>
-        <Skills showimg={true}/>
+        <Skills showimg={true} />
       </ScrollReveal>
       <ScrollReveal>
-        <About description={aboutData}/>
+        <About description={aboutData} />
       </ScrollReveal>
       <ScrollReveal>
         <Contact />
       </ScrollReveal>
-      
     </div>
   );
 }
 
 export default HomePage;
-

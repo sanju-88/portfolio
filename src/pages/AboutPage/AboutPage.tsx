@@ -9,15 +9,17 @@ import Skills from '../../components/Skills/Skills';
 import FunFacts from '../../components/Funfacts/FunFacts';
 
 const aboutData = [
-    {
-      id: 1,
-      description: "I’m a self-taught Software developer based in Noida, Uttar Pradesh,India. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.",
-    },
-    {
-      id: 2,
-      description: "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.",
-    },
-  ]
+{
+id: 1,
+description:
+"I am a passionate Full Stack Developer and a BCA graduate. I love building modern, responsive, and user-friendly web applications.",
+},
+{
+id: 2,
+description:
+"I have hands-on experience with React.js, Node.js, and MongoDB. I am currently looking for opportunities to start my professional journey in the IT industry.",
+},
+];
 
   const facts = [
     {
@@ -26,15 +28,11 @@ const aboutData = [
     },
     {
         id: 2,
-        facts:"I often bike with my friends"
-    },
-    {
-        id: 3,
         facts:"I like pizza and pasta"
     },
     {
-        id: 4,
-        facts:"My favorite movie is Dil Bechara"
+        id: 3,
+        facts:"My favorite movie is Saiyaara"
     },
   ]
 const sectionVariants = {
@@ -73,8 +71,8 @@ const AboutPage = ({setSelectedItem}:{setSelectedItem: React.Dispatch<React.SetS
   return (
     <div>
       <Helmet>
-        <title>About - Ashish Chanchal</title>
-       <meta name='description' content='Hello, i’m Ashish Chanchal
+        <title>About - Sanju sawariya</title>
+       <meta name='description' content='Hello, i’m Sanju sawariya
 I’m a self-taught Software developer based in Noida, Uttar Pradesh,India. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
 
 Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.'/>

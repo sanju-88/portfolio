@@ -44,8 +44,8 @@ const ContactPage = () => {
   return (
     <div>
       <Helmet>
-        <title>Contact - Ashish Chanchal</title>
-        <meta name="description" content="Contact Ashish Chanchal for software development, web design, and community management services. Connect with Ashish Chanchal on social media platforms like LinkedIn, Twitter, GitHub, and Instagram. Reach out to Ashish Chanchal for collaborations, projects, and more." />
+        <title>Contact - sanju sawariya</title>
+        <meta name="description" content="Contact sanju sawariya for software development, web design, and community management services. Connect with sanju sawariya on social media platforms like LinkedIn, Twitter, GitHub, and Instagram. Reach out to sanju sawariya for collaborations, projects, and more." />
       </Helmet>
       <ScrollReveal>
         <HeadingSec title="Contact" description="Let's Connect"/>

@@ -23,7 +23,7 @@ const About = ({setSelectedItem,description}:{setSelectedItem?: React.Dispatch<R
         
         <div className="space-y-10  text-white  md:w-2/3">
           <h2 className="text-xl">
-            Hello, i’m <span className="text-secondary">Ashish Chanchal</span>
+            Hello, i’m <span className="text-secondary">Sanju sawariya</span>
           </h2>
 {description.map((desc)=><p key={desc.id} className="text-sm">{desc.description}</p>)}
       
@@ -32,11 +32,11 @@ const About = ({setSelectedItem,description}:{setSelectedItem?: React.Dispatch<R
           </div>
         </div>
         <div className="relative">
-<img src={dots} alt="Ashish img" className=" absolute top-0 "/>
+<img src={dots} alt="Sanju img" className=" absolute top-0 "/>
 <motion.img   initial="hidden"
           animate="visible"
           variants={imageVariants}
-          whileHover="hover" src={macbook} alt="Ashish img md:w-[80%]" />
+          whileHover="hover" src={macbook} alt="Sanju img md:w-[80%]" />
 
         </div>
       </div>

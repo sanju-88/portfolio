@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "../shared/Button";
 import heroimg from "../../assets/hero/heroimg.png";
-import heromain from "../../assets/hero/heromain.webp";
+import heromain from "../../assets/hero/heromain.png";
 import dots from "../../assets/common/dots.png";
 import commas from "../../assets/common/commas.png";
 import rectangle from "../../assets/common/rectangle.png";
@@ -30,7 +30,11 @@ const imageVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeInOut" } },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
 };
 
 const buttonVariants = {
@@ -55,25 +59,23 @@ const Hero = ({}) => {
         >
           <div>
             <h2 className="font-semibold text-white">
-              Ashish Chanchal is a{" "}
-              <span className="text-secondary">Software Developer </span>and{" "}
-              <span className="text-secondary">Community Manager</span>
+              Sanju is a{" "}
+              <span className="text-secondary">Software Developer </span>
             </h2>
           </div>
           <div>
             <p className="text-sm text-white">
               I am a passionate Software Engineer with a strong focus on
-              Frontend Development, Full-stack Development, Machine Learning,
-              and Open Source. I love engaging with the community and have had
-              the privilege to work on diverse projects and internships in the
-              tech industry.
+              Frontend Development, Full-stack Development, and Open Source. I
+              love engaging with the community and have had the privilege to
+              work on diverse projects and internships in the tech industry.
             </p>
           </div>
           <motion.div variants={buttonVariants} whileHover="hover">
             <Button
               text="Download CV !!"
               link={
-                "https://drive.google.com/file/d/1J094VFPjzW8Qh58rRbR5xPn7d31lMk5x/view?usp=drive_link"
+                "https://drive.google.com/file/d/16f-Jg2TKht0EZ-4YfBYBSdouUvugnIP2/view?usp=drive_link"
               }
             />
           </motion.div>
@@ -93,21 +95,12 @@ const Hero = ({}) => {
               alt="heroimg"
               className="md:w-[150px] bg-transparent absolute left-0 "
             />
-            <div className="md:w-2/3">
+            <div className="md:w-2/5">
               <motion.img
                 src={heromain}
                 alt="heroimg"
-                className="z-10 relative bg-transparent rounded-full"
+                className="z-10  relative top-12 left-2/3 bg-transparent rounded-full"
               />
-              <motion.div
-                className="md:text-sm text-xs flex items-center ml-2 gap-5 p-2 border border-white"
-                initial="hidden"
-                animate="visible"
-                variants={cardVariants}
-              >
-                <div className="w-3 h-3 bg-secondary"></div>
-                <h2 className="text-white">Currently working on Automations</h2>
-              </motion.div>
               <img
                 src={dots}
                 alt=""
