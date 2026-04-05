@@ -10,7 +10,7 @@ export const techData = [
   {
     id: 1,
     category: "Frontend Development",
-    technologies: ["HTML", "CSS","Tailwind CSS", "Javascript", "Typescript"],
+    technologies: ["HTML", "CSS","Tailwind CSS", "Javascript"],
   },
   {
     id: 2,
@@ -20,17 +20,12 @@ export const techData = [
   {
     id: 3,
     category: "Databases",
-    technologies: ["Firbase", "MongoDB"],
+    technologies: ["MySql", "MongoDB"],
   },
   {
     id: 4,
-    category: "App Development",
-    technologies: ["Dart", "Flutter"],
-  },
-  {
-    id: 5,
     category: "Data Structures & Algorithms",
-    technologies: ["C & C++"],
+    technologies: ["JavaScript"],
   },
   {
     id: 6,
@@ -41,13 +36,14 @@ export const techData = [
       "GitHub",
       "Canva",
       "Font Awesome",
+      "Figma",
     ],
   },
 
   {
     id: 7,
     category: "Frameworks & Libraries",
-    technologies: ["React",  "Next JS", "Zod", "ShadCN UI", "BootStrap"],
+    technologies: ["React",  "Next JS", "BootStrap"],
   },
 ];
 

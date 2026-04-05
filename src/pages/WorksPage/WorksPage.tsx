@@ -1,21 +1,25 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 import HeadingSec from "../../components/shared/HeadingSec";
 import Projects from "../../components/Projects/Projects";
+import aiImage from "../../assets/projects/assistant.png";
+import lava from "../../assets/projects/lavastore.png";
+import visa from "../../assets/projects/visa.png";
+import java from "../../assets/projects/java.png";
 
 const ProjectsData = [
   {
     id: 1,
-    title: "EStypeShop",
+    title: "Notes App",
     tech: "React and TailwindCSS",
 
     description: [
-      "EStypeShop is an e-commerce website built using React and TailwindCSS. It includes a home page, product page, and cart page.",
+      "It is a small notes app website built using React and TailwindCSS. It includes a home page in which users can create, edit, and delete notes.",
     ],
-livelink:"https://e-stype-shop.vercel.app/",
-    link: "https://github.com/Ashish-chanchal/EStypeShop",
+    livelink: "https://notes-app-lyart-theta.vercel.app/",
+    link: "https://github.com/sanju-88/notes-app",
   },
   {
     id: 2,
@@ -25,35 +29,11 @@ livelink:"https://e-stype-shop.vercel.app/",
     description: [
       "I have created a basic website for an NGO using React, Vite, and TailwindCSS. The website is responsive and includes a home page, about page, and contact page.",
     ],
-    liveLink:
-      "https://forntedweb-k4jegxf2b-ashish-chanchals-projects.vercel.app/",
-    link: "https://github.com/Ashish-chanchal/forntedweb",
+    link: "https://ngo-git-main-sanjus-projects-ac449c3d.vercel.app/",
+    liveLink: "https://ngo-kd74ov80y-sanjus-projects-ac449c3d.vercel.app/",
   },
   {
     id: 3,
-    title: "Weather App",
-    tech: "Flutter and OpenWeatherMap API",
-
-    description: [
-      "Weather app using Flutter and OpenWeatherMap API. It is a simple app that allows users to check the weather in their location.",
-    ],
-
-    link: "https://github.com/Ashish-chanchal/weather_app",
-  },
-  {
-    id: 4,
-    title: "Words that Sparkle",
-
-    tech: "React and FreeAPI",
-    description: [
-      "Cosntructed an innovative React.js web application, 'Words that Sparkle', optimizing user experience and content accessibility",
-      "Enhanced user engagement by seamlessly integrating motivational quotes with active content from the Quotes API",
-    ],
-    livelink: "https://quotes-sparkle.netlify.app/",
-    link: "https://github.com/Ashish-chanchal/words-sparkle-react",
-  },
-  {
-    id: 5,
     title: "Music Player",
     tech: "HTML CSS JavaScript",
 
@@ -61,11 +41,12 @@ livelink:"https://e-stype-shop.vercel.app/",
       "This  is my favorite project. I have made a music player using HTML, CSS, and JavaScript. It is a simple music player that can play, pause, and skip songs.",
       "I have also added a feature to jump to a specific part of the song by clicking on the progress bar.",
     ],
-    link: "https://github.com/Ashish-chanchal/music_player",
-    livelink: "https://ashish-chanchal.github.io/music_player/",
+    link: "https://github.com/sanju-88/music-player",
+    livelink:
+      "https://music-player-git-main-sanjus-projects-ac449c3d.vercel.app/",
   },
   {
-    id: 6,
+    id: 4,
 
     title: "Text Utils",
     tech: "React",
@@ -73,91 +54,54 @@ livelink:"https://e-stype-shop.vercel.app/",
       "Developed a React.js web application, 'Text Utils', optimizing text editing and data storage capabilities",
     ],
     livelink: "https://txetutils-react.netlify.app/",
-    link: "https://github.com/Ashish-chanchal/textutils",
+    link: "https://github.com/sanju-88/textutils",
   },
-
-  {
-    id: 7,
-    title: "ChatBot",
-    tech: "HTML CSS JavaScript",
-
-    description: [
-      "I have created a chatbot using HTML, CSS, and JavaScript. It is a simple chatbot that can answer basic questions and provide information on a variety of topics.",
-    ],
-    link: "https://github.com/Ashish-chanchal/chatbot",
-    livelink: "https://ashish-chanchal.github.io/chatbot/",
-  },
-  {
-    id: 8,
-    title: "INR to USD Converter",
-    tech: "Flutter",
-
-    description: [
-      "I have created a currency converter app using Flutter. It is a simple app that allows users to convert Indian Rupees to US Dollars.",
-    ],
-    link: "https://github.com/Ashish-chanchal/Currency_converter_flutter",
-  },
-  
-  
-
 ];
 
 const ProjectsCMPdata = [
   {
     id: 1,
-    title: "CareLink",
-    image:
-      "https://github.com/Ashish-chanchal/pdms_college/assets/86229520/6deaf936-3c8c-4319-8c2d-c8a1430e0275",
-    tech: "Dart Flutter Firebase GetX Firebase Auth FireStore",
+    title: "Virtual assistant",
+    image: aiImage,
+    tech: "HTML CSS JavaScript React MonogoDB Express Gemini API",
     description: [
-      "Constructed an innovative patient-doctor connection app utilizing Dart, Flutter, and Firebase technologies, enabling seamless appointment booking and prescription viewing functionalities",
-      "Implemented user-friendly interfaces, enhancing navigation pathways and optimizing user experience. Leveraged heat mapping tools to refine user flow and content accessibility",
+      "A full-stack AI-powered virtual assistant built using the MERN stack and Gemini API. It allows users to register, log in, and interact with an intelligent assistant capable of handling queries and providing dynamic responses. The project demonstrates authentication, API integration, and responsive UI design.",
     ],
-    link: "https://github.com/Ashish-chanchal/pdms_college",
+    link: "https://github.com/sanju-88/EVA---virtual-assistant",
+    livelink: "https://assistant-frontend-ashen.vercel.app/",
   },
   {
     id: 2,
-    image:
-      "https://user-images.githubusercontent.com/86229520/191169870-a28f527b-2e61-49ae-b8af-a5c3a2c3527a.png",
-    title: "E-Learners",
+    image: lava,
+    title: "Lava Store",
     tech: "HTML CSS JavaScript",
     description: [
-      "Built Vibrant website functionalities by leveraging PHP and MySQL databases",
-      "Created user-centric interfaces by streamlining navigation pathways. Employed visualization tools to optimize user navigation and ensure the reachability of content",
+      "A modern and visually appealing e-commerce frontend designed using HTML, CSS, and JavaScript. It features product showcases, interactive UI elements, and smooth user experience focused on design and responsiveness. This project highlights strong frontend development and UI/UX skills.",
     ],
-    link: "https://github.com/Ashish-chanchal/E-learners",
+    link: "https://github.com/sanju-88/lavaStore",
+    livelink: "https://lavastore.netlify.app/",
   },
   {
     id: 3,
-    title: "Movie Tickiter",
+    title: "Animated visa consultancy website",
     tech: "HTML CSS JavaScript",
-    image:
-      "https://github.com/user-attachments/assets/cd00474b-837c-401f-88d4-329d9fe3d56e",
+    image: visa,
     description: [
-      "Engineered an innovative React.js web application, 'Movie Tickiter, optimizing movie ticket booking and data storage capabilities",
-      "It has enhanced user experience by seamlessly merging booking functionality with active content from the Movies Data API",
+      "A professional and animated business website for a visa consultancy service. Built with HTML, CSS, and JavaScript, it includes smooth animations, service sections, and a clean layout to enhance user engagement. The project focuses on real-world business design and interactive web experiences.",
     ],
-    link:"https://github.com/Ashish-chanchal/MovieTickiter",
-    livelink: "https://movieshowticket.netlify.app/",
+    link: "https://github.com/sanju-88/World-visa",
+    livelink: "https://world-visa-immigration.netlify.app/",
   },
   {
     id: 4,
-    title: "Rent-Up",
-    tech: "React Material UI",
-    image:
-      "https://github.com/user-attachments/assets/cd972e1d-816f-4140-9a19-00a154eb16bc",
+    title: "Java learning platform",
+    tech: "HTML CSS JavaScript",
+    image: java,
     description: [
-      "Home Page: Search for properties by city, street, or property type.",
-      "About Page: Information about the company and mission.",
-      "Services: List of services offered.",
-      "Property Listings: View recent and featured property listings.",
-      "Blog: Access real estate articles and news.",
-      "Pricing: Various subscription packages for different user needs.",
-      "Contact Page: Get in touch with the team.",
-      "Newsletter Subscription: Users can subscribe to the newsletter for updates.",
+      "An interactive web-based platform designed to help beginners learn Java through structured topics and hands-on practice. It includes categorized concepts, problem-based learning modules, and a user-friendly interface for easy navigation. The project focuses on simplifying core Java concepts while enhancing logical thinking and coding skills."
     ],
     link: "https://github.com/Ashish-chanchal/Rentup",
-    livelink: "https://rentup1702.netlify.app/",
+    livelink: "https://java-practice-4020.netlify.app/",
   },
 ];
 const sectionVariants = {
@@ -196,8 +140,11 @@ const WorksPage = () => {
   return (
     <div>
       <Helmet>
-        <title>Works - Ashish Chanchal</title>
-        <meta name="description" content="Explore a portfolio of innovative projects, including web and mobile apps built with Dart, Flutter, React, Firebase, HTML, CSS, JavaScript, and more. Discover cutting-edge applications like CareLink, E-Learners, Movie Tickiter, and Rent-Up, each showcasing advanced development in user experience, seamless functionality, and modern design principles. View live projects featuring e-commerce platforms, weather apps, music players, and chatbots." />
+        <title>Works - sanju sawariya</title>
+        <meta
+          name="description"
+          content="Explore a portfolio of innovative projects, including web and mobile apps built with Dart, Flutter, React, Firebase, HTML, CSS, JavaScript, and more. Discover cutting-edge applications like CareLink, E-Learners, Movie Tickiter, and Rent-Up, each showcasing advanced development in user experience, seamless functionality, and modern design principles. View live projects featuring e-commerce platforms, weather apps, music players, and chatbots."
+        />
       </Helmet>
       <ScrollReveal>
         <HeadingSec title="projects" description="List of my projects" />

@@ -8,43 +8,43 @@ import Hero from "../../components/Hero/Hero";
 import Projects from "../../components/Projects/Projects";
 import Skills from "../../components/Skills/Skills";
 import Experience from "../../components/Experience/Experience";
+import aiImage from "../../assets/projects/assistant.png";
+import lava from "../../assets/projects/lavastore.png";
+import visa from "../../assets/projects/visa.png";
+
 const ProjectsData = [
   {
     id: 1,
-    title: "CareLink",
-    image:
-      "https://github.com/Ashish-chanchal/pdms_college/assets/86229520/6deaf936-3c8c-4319-8c2d-c8a1430e0275",
-    tech: "Dart Flutter Firebase GetX Firebase Auth FireStore",
+    title: "Virtual assistant",
+    image: aiImage,
+    tech: "HTML CSS JavaScript React MonogoDB Express Gemini API",
     description: [
-      "Constructed an innovative patient-doctor connection app utilizing Dart, Flutter, and Firebase technologies, enabling seamless appointment booking and prescription viewing functionalities",
-      "Implemented user-friendly interfaces, enhancing navigation pathways and optimizing user experience. Leveraged heat mapping tools to refine user flow and content accessibility",
+      "A full-stack AI-powered virtual assistant built using the MERN stack and Gemini API. It allows users to register, log in, and interact with an intelligent assistant capable of handling queries and providing dynamic responses. The project demonstrates authentication, API integration, and responsive UI design.",
     ],
-    link: "https://github.com/Ashish-chanchal/pdms_college",
+    link: "https://github.com/sanju-88/EVA---virtual-assistant",
+    livelink: "https://assistant-frontend-ashen.vercel.app/",
   },
   {
     id: 2,
-    image:
-      "https://user-images.githubusercontent.com/86229520/191169870-a28f527b-2e61-49ae-b8af-a5c3a2c3527a.png",
-    title: "E-Learners",
+    image: lava,
+    title: "Lava Store",
     tech: "HTML CSS JavaScript",
     description: [
-      "Built Vibrant website functionalities by leveraging PHP and MySQL databases",
-      "Created user-centric interfaces by streamlining navigation pathways. Employed visualization tools to optimize user navigation and ensure the reachability of content",
+      "A modern and visually appealing e-commerce frontend designed using HTML, CSS, and JavaScript. It features product showcases, interactive UI elements, and smooth user experience focused on design and responsiveness. This project highlights strong frontend development and UI/UX skills.",
     ],
-    link: "https://github.com/Ashish-chanchal/E-learners",
+    link: "https://github.com/sanju-88/lavaStore",
+    livelink: "https://lavastore.netlify.app/",
   },
   {
     id: 3,
-    title: "Movie Tickiter",
+    title: "Animated visa consultancy website",
     tech: "HTML CSS JavaScript",
-    image:
-      "https://github.com/user-attachments/assets/cd00474b-837c-401f-88d4-329d9fe3d56e",
+    image: visa,
     description: [
-      "Engineered an innovative React.js web application, 'Movie Tickiter, optimizing movie ticket booking and data storage capabilities",
-      "It has enhanced user experience by seamlessly merging booking functionality with active content from the Movies Data API",
+      "A professional and animated business website for a visa consultancy service. Built with HTML, CSS, and JavaScript, it includes smooth animations, service sections, and a clean layout to enhance user engagement. The project focuses on real-world business design and interactive web experiences.",
     ],
-
-    livelink: "https://movieshowticket.netlify.app/",
+    link: "https://github.com/sanju-88/World-visa",
+    livelink: "https://world-visa-immigration.netlify.app/",
   },
 ];
 const ExperienceData = [
@@ -169,9 +169,6 @@ function HomePage({
       {/* Apply scroll reveal to each section */}
       <ScrollReveal>
         <Hero />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Experience ExperienceData={ExperienceData} />
       </ScrollReveal>
       <ScrollReveal>
         <Experience ExperienceData={InternshipData} title="Internships" />
